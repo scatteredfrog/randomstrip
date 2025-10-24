@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Peanuts';
+    src: url('fonts/peanuts.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'ComicSans';
+    src: url('fonts/LDFComicSans.ttf') format('truetype');
+}
+body {
+    background-color: #1a1a1a;
+    color: #c4c4c4;
+}
+
+.bodyText, h1 {
+    font-family: 'Peanuts';
+}
+
+.normalText {
+    font-family: 'Arial', sans-serif;
+}
+
+.comicSans {
+    font-family: 'ComicSans';
+    top: -2px;
+    font-size: 42px;
+    position: relative;
+}
+
+.submitRow {
+    display: none;
+}
+
+.snoopyGray {
+    background-color: #f3f3f3;
+}
