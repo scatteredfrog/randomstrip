@@ -51,6 +51,14 @@ function randomDate($include_used = false, $is_recalled = '')
      * Go through the $_SESSION['used_rows'] array and check if the
      * reason is 'nonexistent'. If it is, or if $include_used is false
      * and the date is in the array, call randomDate() again.
+     *
+     * Common sense tells us that we should put a sentinel in here in 
+     * the event that all the dates are already used. But reality tells
+     * us that there were over 17,000 strips published, and that the 
+     * podcast happens once a month (sometimes twice) and that only one
+     * strip is chosen per episode. I admit this will cause an issue
+     * in about 1,500 years, so I have asked Bill to give me a heads-up
+     * when he reaches episode 1490.
      */
     foreach ($_SESSION['used_rows'] as $row) {
         if ($row['date'] == $randomDate) {
