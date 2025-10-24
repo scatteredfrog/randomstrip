@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once 'configs.php';
-error_log("Got here");
+
 /**
  * Make a call to randomDate(). Echo the returned array in JSON format.
  */
